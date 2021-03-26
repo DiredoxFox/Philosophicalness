@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>About-Us</title>
+    <link rel="stylesheet" href="css/about-us.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/Logo.jpg" type="images">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Philosophicalness</a>
+        <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white home" href="home-page.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white philosophers" href="philosophers.html">Philosophers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white gallery" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white quiz" href="quiz.html">Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white about-us" href="#">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+    <div class="container-fluid title">
+        <h1>About Us</h1>
+    </div>
+    <div class="container-fluid box-img">
+        <div class="row">
+            <div class="img col-sm-8 col-12">
+                <div class="row">
+                    <div class="card col-4">
+                        <div class="div miles">
+                            <img onclick="miles()" src="img/miles.jpg" alt="">
+                            <h1>Miles C. Subaldo</h1>
+                            <p class="message">Hello! My name is Miles, I’m 17 years old, a senior high student of STI College General Santos, studying Mobile app and Web Developing and also e-Sport player in many different organizations like in school AcadArena, AMD Gaming, One e-Sports, and many more. I am also a volunteer in some non-government organization like Philippine Red Cross, Kidlikasan, and more.</p>    
+                        </div>
+                    </div>
+                    <div class="card col-4">
+                        <div class="div daniel">
+                            <img onclick="daniel()" src="img/daniel.jpg" alt="">
+                            <h1>Daniel E. Alburoto</h1>
+                            <p class="message">I am Daniel E. Alburoto. I'm 16 years old currently studying at STI College of General Santos City. I took It in Mobile Application and Web Development (MAWD). I work at the GREY Harmonics School of Music as a Part-Time Piano teacher. I'm still Grade 12 senior high school and currently striving for the best.</p>    
+                        </div>
+                    </div>
+                    <div class="card col-4">
+                        <div class="div john">
+                            <img onclick="john()" src="img/john.jpg" alt="">
+                            <h1>John Disca</h1>
+                            <p class="message">My name is John Disca. I was born on May 21, 2003 at Pasay City, Manila. My father Emiliano F. Pailona abandon us 10 years ago which makes me experience an incomplete family. Since he was separated to us we no longer have a communication with him even an update regarding about his situation right now. My mother is Joy D. Pailona, she is working abroad, striving to sustain the family financially and support our studies with my brother Joshua D. Pailona.  Someday, I will pay back all of the sacrifices that she have done. This is the reason why I am studying hard so that I will pursue all of my goals in life. My mother is the first person I really admire the most because even her husband leave his family, It's not the reason for her to give up in life, instead she strive and strive to sustain the basic needs of her family and even providing the wants of her children.</p>    
+                        </div>
+                    </div>
+                    <div class="card col-6">
+                        <div class="div kayla">
+                            <img onclick="kayla()" src="img/kayla.jpg" alt="">
+                            <h1>Kayla Mae V. Lumactod</h1>
+                            <p class="message">I am Kayla Mae Lumactod from Barangay Fatima Uhaw. I was born on June 4 2003 in General Santos City and currently 17 years old. I have completed my Junior Highschool at General Santos City National Highschool. I currently studying at the best school in my city. I am a Grade 12 MAWD student at STI Gensan. I feel happy to be a part of this great school with good friends, helpful and loving teacher, and sound school administration. I have nice skills in some subjects whereas I am very weak in a few. Everybody has weaknesses, so I have also. I am a little bit lazy at some places which I do not like. While playing time, I pass my lot of time there which is not a good habit, but I try my best to overcome my weaknesses.</p>    
+                        </div>
+                    </div>
+                    <div class="card col-6">
+                        <div class="div georgette">
+                            <img onclick="georgette()" src="img/georgette.jpg" alt="">
+                            <h1>Georgette P. Algarme</h1>
+                            <p class="message">Hi, I'm Georgette Algarme 17 years old taking mobile app and web developer at STI COLLEGE of General Santos City. I'm a very quiet person if you meet me for the first time but if you got to know me more I really am a talkative person. I like staying indoors, watching movies and playing online games. I also love listening to motivational talks as it motivates me to become a better version of my self and I also like those people who work hard as they inspire me to work harder.</p>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback col-sm-4 col-12">
+                <form>
+                    <input autocomplete="off" type="text" id="name" placeholder="NAME" required><br>
+                    <input autocomplete="off" type="email" id="email" placeholder="EMAIL" required><br>
+                    <textarea id="feedback" placeholder="FEEDBACK" required></textarea><br>
+                    <input id="btn" type="SUBMIT">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script text="javascript" src="js/about-us.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

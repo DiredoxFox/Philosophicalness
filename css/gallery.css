@@ -1,0 +1,1380 @@
+body{
+    margin: 0;
+    background-image: url("../img/gallery-bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    line-height: 1.5;
+    font-size: 1.3rem;
+    overflow: hidden;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+.navbar{
+    background-color: transparent!important;
+    color: #ffffff!important;
+    padding: 0;
+    line-height: 0;
+}
+
+.navbar-brand{
+    font-family: 'Bitter', serif;
+    margin-top: 43px;
+    margin-left: 40px;
+    font-weight: 700;
+    font-size: 1.5rem!important;
+    color: #ffffff!important;
+}
+
+.navbar-item a{
+    font-size: 1.5rem;
+}
+
+.navbar-toggler{
+    padding: 0;
+    margin-top: 43px;
+    margin-right: 18px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+  
+.custom-toggler.navbar-toggler {
+  border-color: transparent;
+  outline: none;
+}
+
+.navbar-nav{
+    background-color: rgb(0, 0, 0,0.8);
+}
+
+.navbar-collapse ul{
+    margin-top: 10px;
+    padding-bottom: 50px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav-item{
+    margin: 40px 30px 0;
+}
+
+.navbar-nav li{
+    position: relative;
+}
+
+.home::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    top: 16px;
+    height: 0;
+    opacity: 0;
+    background: white;
+}
+
+.home:hover::before{
+    content: "";
+    position: absolute;
+    width: 58px;
+    top: 22px;
+    height: 1px;
+    opacity: 100%;
+    background: white;
+    transition: all 1s;
+}
+
+.philosophers::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 16px;
+    opacity: 0;
+    background: white;
+    transition: all 1s;
+}
+
+.philosophers:hover::before{
+    content: "";
+    position: absolute;
+    width: 122px;
+    height: 1px;
+    top: 22px;
+    opacity: 100%;
+    background: white;
+}
+
+.gallery::before{
+    content: "";
+    position: absolute;
+    width: 68px;
+    height: 1px;
+    top: 22px;
+    opacity: 100%;
+    background: white;
+}
+
+.quiz::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background: white;
+    top: 16px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.quiz:hover::before{
+    content: "";
+    position: absolute;
+    width: 44px;
+    height: 1px;
+    top: 22px;
+    opacity: 100%;
+    background: white;
+}
+
+.about-us::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background: white;
+    top: 16px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.about-us:hover::before{
+    content: "";
+    position: absolute;
+    width: 88px;
+    height: 1px;
+    top: 22px;
+    opacity: 100%;
+    background: white;
+}
+
+.images{
+    position: relative;
+    left: -20px;
+    height: 70vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+img {
+    width: 300px;
+    margin: 25px;
+}
+
+h1{
+    position: relative;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: -20px;
+    font-family: 'Bitter', serif;
+}
+
+hr{
+    background-color: #ffffff;
+    height: 2px;
+}
+
+.socrates{
+    position: relative;  
+    cursor: pointer;
+}
+
+.socrates::before{
+    content:"";
+    background-color: #000000;
+    position: absolute;
+    top: 25px;
+    left: 40px;
+    height: 0;
+    width: 300px;
+    opacity: 50%;
+    transition: all 1s;
+}
+
+.socrates::after{
+    content:"Socrates";
+    position: absolute;
+    font-family: 'Bitter', serif;
+    left: 105px;
+    top: 25px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.socrates:hover::before{
+    content:"";
+    background-color: #000000;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    opacity: 50%;
+    top: 25px;
+    left: 40px;
+}
+
+.socrates:hover::after{
+    content:"Socrates";
+    position: absolute;
+    font-family: 'Bitter', serif;
+    left: 105px;
+    top: 140px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    opacity: 100%;
+}
+
+.aristotle{
+    position: relative;
+    cursor: pointer;
+}
+
+.aristotle::before{
+    content:"";
+    background-color: #000000;
+    position: absolute;
+    height: 0;
+    width: 300px;
+    opacity: 50%;
+    top: 25px;
+    left: 40px;
+    transition: all 1s;
+}
+
+.aristotle::after{
+    content:"Aristotle";
+    position: absolute;
+    font-family: 'Bitter', serif;
+    left: 110px;
+    top: 25px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.aristotle:hover::before{
+    content:"";
+    background-color: #000000;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    opacity: 50%;
+    top: 25px;
+    left: 40px;
+}
+
+.aristotle:hover::after{
+    content:"Aristotle";
+    position: absolute;
+    font-family: 'Bitter', serif;
+    left: 110px;
+    top: 140px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    opacity: 100%;
+}
+
+.plato{
+    position: relative;
+    cursor: pointer;
+}
+
+.plato::before{
+    content:"";
+    background-color: #000000;
+    position: absolute;
+    height: 0;
+    width: 300px;
+    opacity: 50%;
+    top: 25px;
+    left: 40px;
+    transition: all 1s;
+}
+
+.plato::after{
+    content:"Plato";
+    position: absolute;
+    font-family: 'Bitter', serif;
+    left: 140px;
+    top: 25px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.plato:hover::before{
+    content:"";
+    background-color: #000000;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    opacity: 50%;
+    top: 25px;
+    left: 40px;
+}
+
+.plato:hover::after{
+    content:"Plato";
+    position: absolute;
+    font-family: 'Bitter', serif;
+    left: 140px;
+    top: 140px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    opacity: 100%;
+}
+
+.parmenides{
+    position: relative;
+    cursor: pointer;
+}
+
+.parmenides::before{
+    content:"";
+    background-color: #000000;
+    position: absolute;
+    height: 0;
+    width: 300px;
+    opacity: 50%;
+    top: 25px;
+    left: 40px;
+    transition: all 1s;
+}
+
+.parmenides::after{
+    content:"Parmenides";
+    position: absolute;
+    font-family: 'Bitter', serif;
+    left: 85px;
+    top: 25px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.parmenides:hover::before{
+    content:"";
+    background-color: #000000;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    opacity: 50%;
+    top: 25px;
+    left: 40px;
+}
+
+.parmenides:hover::after{
+    content:"Parmenides";
+    position: absolute;
+    font-family: 'Bitter', serif;
+    left: 85px;
+    top: 140px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    opacity: 100%;
+}
+
+.epictetus{
+    position: relative;
+    cursor: pointer;
+}
+
+.epictetus::before{
+    content:"";
+    background-color: #000000;
+    position: absolute;
+    height: 0;
+    width: 300px;
+    opacity: 50%;
+    top: 25px;
+    left: 40px;
+    transition: all 1s;
+}
+
+.epictetus::after{
+    content:"Epictetus";
+    position: absolute;
+    font-family: 'Bitter', serif;
+    left: 105px;
+    top: 25px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.epictetus:hover::before{
+    content:"";
+    background-color: #000000;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    opacity: 50%;
+    top: 25px;
+    left: 40px;
+}
+
+.epictetus:hover::after{
+    content:"Epictetus";
+    position: absolute;
+    font-family: 'Bitter', serif;
+    left: 105px;
+    top: 140px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    opacity: 100%;
+}
+
+.seneca{
+    position: relative;
+    cursor: pointer;
+}
+
+.seneca::before{
+    content:"";
+    background-color: #000000;
+    position: absolute;
+    height: 0;
+    width: 300px;
+    opacity: 50%;
+    top: 25px;
+    left: 40px;
+    transition: all 1s;
+}
+
+.seneca::after{
+    content:"Seneca";
+    position: absolute;
+    font-family: 'Bitter', serif;
+    left: 125px;
+    top: 25px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.seneca:hover::before{
+    content:"";
+    background-color: #000000;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    opacity: 50%;
+    top: 25px;
+    left: 40px;
+}
+
+.seneca:hover::after{
+    content:"Seneca";
+    position: absolute;
+    font-family: 'Bitter', serif;
+    left: 125px;
+    top: 140px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    opacity: 100%;
+}
+
+.confucius{
+    position: relative;
+    cursor: pointer;
+}
+
+.confucius::before{
+    content:"";
+    background-color: #000000;
+    position: absolute;
+    height: 0;
+    width: 300px;
+    opacity: 50%;
+    top: 25px;
+    left: 40px;
+    transition: all 1s;
+}
+
+.confucius::after{
+    content:"Confucius";
+    position: absolute;
+    font-family: 'Bitter', serif;
+    left: 95px;
+    top: 25px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.confucius:hover::before{
+    content:"";
+    background-color: #000000;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    opacity: 50%;
+    top: 25px;
+    left: 40px;
+}
+
+.confucius:hover::after{
+    content:"Confucius";
+    position: absolute;
+    font-family: 'Bitter', serif;
+    left: 95px;
+    top: 140px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    opacity: 100%;
+}
+
+.aquinas{
+    position: relative;
+    cursor: pointer;
+}
+
+.aquinas::before{
+    content:"";
+    background-color: #000000;
+    position: absolute;
+    height: 0;
+    width: 300px;
+    opacity: 50%;
+    top: 25px;
+    left: 40px;
+    transition: all 1s;
+}
+
+.aquinas::after{
+    content:"Thomas Aquinas";
+    position: absolute;
+    font-family: 'Bitter', serif;
+    left: 70px;
+    top: 25px;
+    font-size: 2rem;
+    font-weight: 800;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.aquinas:hover::before{
+    content:"";
+    background-color: #000000;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    opacity: 50%;
+    top: 25px;
+    left: 40px;
+}
+
+.aquinas:hover::after{
+    content:"Thomas Aquinas";
+    position: absolute;
+    font-family: 'Bitter', serif;
+    left: 70px;
+    top: 140px;
+    font-size: 2rem;
+    font-weight: 800;
+    opacity: 100%;
+}
+
+.descartes{
+    position: relative;
+    cursor: pointer;
+}
+
+.descartes::before{
+    content:"";
+    background-color: #000000;
+    position: absolute;
+    height: 0;
+    width: 300px;
+    opacity: 50%;
+    top: 25px;
+    left: 40px;
+    transition: all 1s;
+}
+
+.descartes::after{
+    content:"Rene Descartes";
+    position: absolute;
+    font-family: 'Bitter', serif;
+    left: 80px;
+    top: 25px;
+    font-size: 2rem;
+    font-weight: 800;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.descartes:hover::before{
+    content:"";
+    background-color: #000000;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    opacity: 50%;
+    top: 25px;
+    left: 40px;
+}
+
+.descartes:hover::after{
+    content:"Rene Descartes";
+    position: absolute;
+    font-family: 'Bitter', serif;
+    left: 80px;
+    top: 140px;
+    font-size: 2rem;
+    font-weight: 800;
+    opacity: 100%;
+}
+
+.foucault{position: relative;
+    cursor: pointer;
+}
+
+.foucault::before{
+    content:"";
+    background-color: #000000;
+    position: absolute;
+    height: 0;
+    width: 300px;
+    opacity: 50%;
+    top: 25px;
+    left: 40px;
+    transition: all 1s;
+}
+
+.foucault::after{
+    content:"Michel Foucault";
+    position: absolute;
+    font-family: 'Bitter', serif;
+    left: 75px;
+    top: 25px;
+    font-size: 2rem;
+    font-weight: 800;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.foucault:hover::before{
+    content:"";
+    background-color: #000000;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    opacity: 50%;
+    top: 25px;
+    left: 40px;
+}
+
+.foucault:hover::after{
+    content:"Michel Foucault";
+    position: absolute;
+    font-family: 'Bitter', serif;
+    left: 75px;
+    top: 140px;
+    font-size: 2rem;
+    font-weight: 800;
+    opacity: 100%;
+}
+
+@media (min-width: 360px){
+    .images{
+        left: -10px;
+    }
+}
+
+@media (min-width: 425px){
+    .images{
+        left: 25px;
+    }
+}
+
+@media (min-width: 768px){
+    .images{
+        left: 0px;
+    }
+}
+
+@media (min-width: 992px){
+    .navbar-brand{
+        margin-top: 0;
+    }
+
+    .navbar-nav{
+        background-color: transparent;
+    }
+
+    .images{
+        position: relative;
+        left: 80px;
+    }
+
+    img{
+        margin: 25px;
+    }
+
+}
+
+@media (min-width:1440px){
+    body{
+        background-size: 100% 100%;
+        background-position: center center;
+    }
+
+    .images{
+        left: 0;
+    }
+}
+
+@media (min-width:2560px){
+    body{
+        font-size: 3rem;
+        margin-top: 43px;
+        margin-right: 20px;
+    }
+
+    .navbar-brand{
+        margin-top: 43px;
+        margin-left: 40px;
+        font-size: 3rem!important;
+    }
+
+    .home::before{
+        content: "";
+        position: absolute;
+        width: 0;
+        top: 39px;
+        height: 0;
+        opacity: 0;
+        background: white;
+    }
+
+    .home:hover::before{
+        content: "";
+        position: absolute;
+        width: 130px;
+        top: 40px;
+        height: 5px;
+        opacity: 100%;
+        background: white;
+    }
+    
+    .philosophers::before{
+        content: "";
+        position: absolute;
+        width: 280px;
+        height: 5px;
+        top: 40px;
+        opacity: 100%;
+        background: white;
+    }
+    
+    .gallery::before{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        background: white;
+        top: 39px;
+        opacity: 0;
+        transition: all 1s;
+    }
+    
+    .gallery:hover::before{
+        content: "";
+        position: absolute;
+        width: 160px;
+        height: 5px;
+        top: 40px;
+        opacity: 100%;
+        background: white;
+    }
+    
+    .quiz::before{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        background: white;
+        top: 16px;
+        opacity: 0;
+        transition: all 1s;
+    }
+    
+    .quiz:hover::before{
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 5px;
+        top: 40px;
+        opacity: 100%;
+        background: white;
+    }
+    
+    .about-us::before{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        background: white;
+        top: 39px;
+        opacity: 0;
+        transition: all 1s;
+    }
+    
+    .about-us:hover::before{
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 5px;
+        top: 40px;
+        opacity: 100%;
+        background: white;
+    }
+
+    h1{
+        font-size: 5rem;
+    }
+
+    .images{
+        left: 25px;
+    }
+
+    img{
+        width: 500px;
+    }
+
+    .socrates{
+        position: relative;  
+        cursor: pointer;
+    }
+    
+    .socrates::before{
+        content:"";
+        background-color: #000000;
+        position: absolute;
+        top: 25px;
+        left: 40px;
+        height: 0;
+        width: 500px;
+        opacity: 50%;
+        transition: all 1s;
+    }
+    
+    .socrates::after{
+        content:"Socrates";
+        position: absolute;
+        font-family: 'Bitter', serif;
+        left: 160px;
+        top: 25px;
+        font-size: 4rem;
+        font-weight: 800;
+        opacity: 0;
+        transition: all 1s;
+    }
+    
+    .socrates:hover::before{
+        content:"";
+        background-color: #000000;
+        position: absolute;
+        height: 500px;
+        width: 500px;
+        opacity: 50%;
+        top: 25px;
+        left: 40px;
+    }
+    
+    .socrates:hover::after{
+        content:"Socrates";
+        position: absolute;
+        font-family: 'Bitter', serif;
+        left: 160px;
+        top: 220px;
+        font-size: 4rem;
+        font-weight: 800;
+        opacity: 100%;
+    }
+    
+    .aristotle{
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .aristotle::before{
+        content:"";
+        background-color: #000000;
+        position: absolute;
+        height: 0;
+        width: 500px;
+        opacity: 50%;
+        top: 25px;
+        left: 40px;
+        transition: all 1s;
+    }
+    
+    .aristotle::after{
+        content:"Aristotle";
+        position: absolute;
+        font-family: 'Bitter', serif;
+        left: 160px;
+        top: 25px;
+        font-size: 4rem;
+        font-weight: 800;
+        opacity: 0;
+        transition: all 1s;
+    }
+    
+    .aristotle:hover::before{
+        content:"";
+        background-color: #000000;
+        position: absolute;
+        height: 500px;
+        width: 500px;
+        opacity: 50%;
+        top: 25px;
+        left: 40px;
+    }
+    
+    .aristotle:hover::after{
+        content:"Aristotle";
+        position: absolute;
+        font-family: 'Bitter', serif;
+        left: 160px;
+        top: 220px;
+        font-size: 4rem;
+        font-weight: 800;
+        opacity: 100%;
+    }
+    
+    .plato{
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .plato::before{
+        content:"";
+        background-color: #000000;
+        position: absolute;
+        height: 0;
+        width: 500px;
+        opacity: 50%;
+        top: 25px;
+        left: 40px;
+        transition: all 1s;
+    }
+    
+    .plato::after{
+        content:"Plato";
+        position: absolute;
+        font-family: 'Bitter', serif;
+        left: 215px;
+        top: 25px;
+        font-size: 4rem;
+        font-weight: 800;
+        opacity: 0;
+        transition: all 1s;
+    }
+    
+    .plato:hover::before{
+        content:"";
+        background-color: #000000;
+        position: absolute;
+        height: 500px;
+        width: 500px;
+        opacity: 50%;
+        top: 25px;
+        left: 40px;
+    }
+    
+    .plato:hover::after{
+        content:"Plato";
+        position: absolute;
+        font-family: 'Bitter', serif;
+        left: 215px;
+        top: 220px;
+        font-size: 4rem;
+        font-weight: 800;
+        opacity: 100%;
+    }
+    
+    .parmenides{
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .parmenides::before{
+        content:"";
+        background-color: #000000;
+        position: absolute;
+        height: 0;
+        width: 500px;
+        opacity: 50%;
+        top: 25px;
+        left: 40px;
+        transition: all 1s;
+    }
+    
+    .parmenides::after{
+        content:"Parmenides";
+        position: absolute;
+        font-family: 'Bitter', serif;
+        left: 115px;
+        top: 25px;
+        font-size: 4rem;
+        font-weight: 800;
+        opacity: 0;
+        transition: all 1s;
+    }
+    
+    .parmenides:hover::before{
+        content:"";
+        background-color: #000000;
+        position: absolute;
+        height: 500px;
+        width: 500px;
+        opacity: 50%;
+        top: 25px;
+        left: 40px;
+    }
+    
+    .parmenides:hover::after{
+        content:"Parmenides";
+        position: absolute;
+        font-family: 'Bitter', serif;
+        left: 115px;
+        top: 220px;
+        font-size: 4rem;
+        font-weight: 800;
+        opacity: 100%;
+    }
+    
+    .epictetus{
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .epictetus::before{
+        content:"";
+        background-color: #000000;
+        position: absolute;
+        height: 0;
+        width: 500px;
+        opacity: 50%;
+        top: 25px;
+        left: 40px;
+        transition: all 1s;
+    }
+    
+    .epictetus::after{
+        content:"Epictetus";
+        position: absolute;
+        font-family: 'Bitter', serif;
+        left: 155px;
+        top: 25px;
+        font-size: 4rem;
+        font-weight: 800;
+        opacity: 0;
+        transition: all 1s;
+    }
+    
+    .epictetus:hover::before{
+        content:"";
+        background-color: #000000;
+        position: absolute;
+        height: 500px;
+        width: 500px;
+        opacity: 50%;
+        top: 25px;
+        left: 40px;
+    }
+    
+    .epictetus:hover::after{
+        content:"Epictetus";
+        position: absolute;
+        font-family: 'Bitter', serif;
+        left: 155px;
+        top: 220px;
+        font-size: 4rem;
+        font-weight: 800;
+        opacity: 100%;
+    }
+    
+    .seneca{
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .seneca::before{
+        content:"";
+        background-color: #000000;
+        position: absolute;
+        height: 0;
+        width: 500px;
+        opacity: 50%;
+        top: 25px;
+        left: 40px;
+        transition: all 1s;
+    }
+    
+    .seneca::after{
+        content:"Seneca";
+        position: absolute;
+        font-family: 'Bitter', serif;
+        left: 185px;
+        top: 25px;
+        font-size: 4rem;
+        font-weight: 800;
+        opacity: 0;
+        transition: all 1s;
+    }
+    
+    .seneca:hover::before{
+        content:"";
+        background-color: #000000;
+        position: absolute;
+        height: 500px;
+        width: 500px;
+        opacity: 50%;
+        top: 25px;
+        left: 40px;
+    }
+    
+    .seneca:hover::after{
+        content:"Seneca";
+        position: absolute;
+        font-family: 'Bitter', serif;
+        left: 185px;
+        top: 220px;
+        font-size: 4rem;
+        font-weight: 800;
+        opacity: 100%;
+    }
+    
+    .confucius{
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .confucius::before{
+        content:"";
+        background-color: #000000;
+        position: absolute;
+        height: 0;
+        width: 500px;
+        opacity: 50%;
+        top: 25px;
+        left: 40px;
+        transition: all 1s;
+    }
+    
+    .confucius::after{
+        content:"Confucius";
+        position: absolute;
+        font-family: 'Bitter', serif;
+        left: 145px;
+        top: 25px;
+        font-size: 4rem;
+        font-weight: 800;
+        opacity: 0;
+        transition: all 1s;
+    }
+    
+    .confucius:hover::before{
+        content:"";
+        background-color: #000000;
+        position: absolute;
+        height: 500px;
+        width: 500px;
+        opacity: 50%;
+        top: 25px;
+        left: 40px;
+    }
+    
+    .confucius:hover::after{
+        content:"Confucius";
+        position: absolute;
+        font-family: 'Bitter', serif;
+        left: 145px;
+        top: 220px;
+        font-size: 4rem;
+        font-weight: 800;
+        opacity: 100%;
+    }
+    
+    .aquinas{
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .aquinas::before{
+        content:"";
+        background-color: #000000;
+        position: absolute;
+        height: 0;
+        width: 500px;
+        opacity: 50%;
+        top: 25px;
+        left: 40px;
+        transition: all 1s;
+    }
+    
+    .aquinas::after{
+        content:"Thomas Aquinas";
+        position: absolute;
+        font-family: 'Bitter', serif;
+        left: 70px;
+        top: 25px;
+        font-size: 3.5rem;
+        font-weight: 800;
+        opacity: 0;
+        transition: all 1s;
+    }
+    
+    .aquinas:hover::before{
+        content:"";
+        background-color: #000000;
+        position: absolute;
+        height: 500px;
+        width: 500px;
+        opacity: 50%;
+        top: 25px;
+        left: 40px;
+    }
+    
+    .aquinas:hover::after{
+        content:"Thomas Aquinas";
+        position: absolute;
+        font-family: 'Bitter', serif;
+        left: 70px;
+        top: 220px;
+        font-size: 3.5rem;
+        font-weight: 800;
+        opacity: 100%;
+    }
+    
+    .descartes{
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .descartes::before{
+        content:"";
+        background-color: #000000;
+        position: absolute;
+        height: 0;
+        width: 500px;
+        opacity: 50%;
+        top: 25px;
+        left: 40px;
+        transition: all 1s;
+    }
+    
+    .descartes::after{
+        content:"Rene Descartes";
+        position: absolute;
+        font-family: 'Bitter', serif;
+        left: 95px;
+        top: 25px;
+        font-size: 3.5rem;
+        font-weight: 800;
+        opacity: 0;
+        transition: all 1s;
+    }
+    
+    .descartes:hover::before{
+        content:"";
+        background-color: #000000;
+        position: absolute;
+        height: 500px;
+        width: 500px;
+        opacity: 50%;
+        top: 25px;
+        left: 40px;
+    }
+    
+    .descartes:hover::after{
+        content:"Rene Descartes";
+        position: absolute;
+        font-family: 'Bitter', serif;
+        left: 95px;
+        top: 220px;
+        font-size: 3.5rem;
+        font-weight: 800;
+        opacity: 100%;
+    }
+    
+    .foucault{position: relative;
+        cursor: pointer;
+    }
+    
+    .foucault::before{
+        content:"";
+        background-color: #000000;
+        position: absolute;
+        height: 0;
+        width: 500px;
+        opacity: 50%;
+        top: 25px;
+        left: 40px;
+        transition: all 1s;
+    }
+    
+    .foucault::after{
+        content:"Michel Foucault";
+        position: absolute;
+        font-family: 'Bitter', serif;
+        left: 85px;
+        top: 25px;
+        font-size: 3.5rem;
+        font-weight: 800;
+        opacity: 0;
+        transition: all 1s;
+    }
+    
+    .foucault:hover::before{
+        content:"";
+        background-color: #000000;
+        position: absolute;
+        height: 500px;
+        width: 500px;
+        opacity: 50%;
+        top: 25px;
+        left: 40px;
+    }
+    
+    .foucault:hover::after{
+        content:"Michel Foucault";
+        position: absolute;
+        font-family: 'Bitter', serif;
+        left: 85px;
+        top: 220px;
+        font-size: 3.5rem;
+        font-weight: 800;
+        opacity: 100%;
+    }
+    
+}

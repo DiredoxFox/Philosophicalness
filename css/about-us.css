@@ -1,0 +1,2399 @@
+body{
+    margin: 0;
+    background-image: url("../img/about-us-bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    line-height: 1.5;
+    font-size: 1.3rem;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.navbar{
+    background-color: transparent!important;
+    color: #ffffff!important;
+    padding: 0;
+    line-height: 0;
+}
+
+.navbar-brand{
+    font-family: 'Bitter', serif;
+    margin-top: 43px;
+    margin-left: 40px;
+    font-weight: 700;
+    font-size: 1.5rem!important;
+    color: #ffffff!important;
+}
+
+.navbar-item a{
+    font-size: 1.5rem;
+}
+
+.navbar-toggler{
+    padding: 0;
+    margin-top: 43px;
+    margin-right: 18px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+  
+.custom-toggler.navbar-toggler {
+  border-color: transparent;
+  outline: none;
+}
+
+.navbar-nav{
+    background-color: rgb(0, 0, 0,0.8);
+}
+
+.navbar-collapse ul{
+    margin-top: 10px;
+    padding-bottom: 50px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav-item{
+    margin: 40px 30px 0;
+}
+
+.navbar-nav li{
+    position: relative;
+}
+
+.home::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    top: 16px;
+    height: 0;
+    opacity: 0;
+    background: white;
+}
+
+.home:hover::before{
+    content: "";
+    position: absolute;
+    width: 58px;
+    top: 22px;
+    height: 1px;
+    opacity: 100%;
+    background: white;
+    transition: all 1s;
+}
+
+.philosophers::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 16px;
+    opacity: 0;
+    background: white;
+    transition: all 1s;
+}
+
+.philosophers:hover::before{
+    content: "";
+    position: absolute;
+    width: 122px;
+    height: 1px;
+    top: 22px;
+    opacity: 100%;
+    background: white;
+}
+
+.gallery::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 00;
+    top: 16px;
+    opacity: 0;
+    background: white;
+    transition: all 1s;
+}
+
+.gallery:hover::before{
+    content: "";
+    position: absolute;
+    width: 68px;
+    height: 1px;
+    top: 22px;
+    opacity: 100%;
+    background: white;
+}
+
+.quiz::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 16px;
+    opacity: 0;
+    background: white;
+    transition: all 1s;
+}
+
+.quiz:hover::before{
+    content: "";
+    position: absolute;
+    width: 44px;
+    height: 1px;
+    top: 22px;
+    opacity: 100%;
+    background: white;
+}
+
+.about-us::before{
+    content: "";
+    position: absolute;
+    width: 88px;
+    height: 1px;
+    top: 22px;
+    opacity: 100%;
+    background: white;
+}
+
+.title{
+    position: relative;
+    left: 10px;
+    z-index: 1;
+}
+
+.title h1{
+    font-family: 'Bitter', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: -8px;
+}
+
+.box-img{
+    position: relative;
+    height: 100%;
+    background-color: rgb(0, 0, 0,0.4);
+}
+
+.box-img::before{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 2px;
+    width: 93vw;
+    top: 170px;
+    right: 10px;
+}
+
+.card{
+    padding-top: 20px;
+}
+
+img{
+    width: 15vw;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.img{
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.img h1{
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 0.5rem;
+}
+
+.miles{
+    position: relative;
+    left: 0;
+    top: 0;
+    transition: all 1s;
+}
+
+.miles2 img{
+    width: 20vw;
+    cursor: pointer;
+}
+
+.miles2{
+    position: relative;
+    left: 10px;
+    top: 30px;
+    transition: all 1s;
+}
+
+.miles2 h1{
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 160%;
+    font-size: 0.5rem;
+    font-weight: 500;
+}
+
+.miles2::after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    width: 60vw;
+    height: 1px;
+    top: 10px;
+    left: 80px;
+}
+
+.miles2 p{
+    text-align: left;
+    position: absolute;
+    top: 15px;
+    left: 80px;
+    width: 60vw;
+    font-size: 0.4rem;
+}
+
+.daniel{
+    position: relative;
+    left: 0;
+    top: 0;
+    text-align: center;
+    transition: all 1s;
+}
+
+.daniel2 img{
+    width: 20vw;
+}
+
+.daniel2{
+    position: relative;
+    left: -100px;
+    top: 30px;
+    transition: all 1s;
+}
+
+.daniel2 h1{
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 160%;
+    font-size: 0.5rem;
+    font-weight: 500;
+}
+
+.daniel2::after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    width: 60vw;
+    height: 1px;
+    top: 10px;
+    left: 80px;
+}
+
+.daniel2 p{
+    text-align: left;
+    position: absolute;
+    top: 15px;
+    left: 80px;
+    width: 60vw;
+    font-size: 0.4rem;
+}
+
+.john{
+    position: relative;
+    left: 0;
+    top: 0;
+    text-align: center;
+    transition: all 1s;
+}
+
+.john2 img{
+    width: 20vw;
+}
+
+.john2{
+    position: relative;
+    left: -220px;
+    top: 30px;
+    transition: all 1s;
+}
+
+.john2 h1{
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 160%;
+    font-size: 0.5rem;
+    font-weight: 500;
+}
+
+.john2::after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    width: 70vw;
+    height: 1px;
+    top: 10px;
+    left: 80px;
+}
+
+.john2 p{
+    text-align: left;
+    position: absolute;
+    top: 15px;
+    left: 80px;
+    width: 70vw;
+    font-size: 6px;
+}
+
+.kayla{
+    position: relative;
+    left: 0;
+    top: 0;
+    text-align: center;
+    transition: all 1s;
+}
+
+.kayla2 img{
+    width: 20vw;
+}
+
+.kayla2{
+    position: relative;
+    left: -30px;
+    top: -60px;
+    transition: all 1s;
+}
+
+.kayla2 h1{
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 160%;
+    font-size: 0.5rem;
+    font-weight: 500;
+}
+
+.kayla2::after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    width: 65vw;
+    height: 1px;
+    top: 10px;
+    left: 110px;
+}
+
+.kayla2 p{
+    text-align: left;
+    position: absolute;
+    top: 15px;
+    left: 110px;
+    width: 65vw;
+    font-size: 0.3rem;
+}
+
+.georgette{
+    position: relative;
+    left: 0;
+    top: 0;
+    text-align: center;
+    transition: all 1s;
+}
+
+.georgette2 img{
+    width: 20vw;
+}
+
+.georgette2{
+    position: relative;
+    left: -190px;
+    top: -60px;
+    transition: all 1s;
+}
+
+.georgette2 h1{
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 160%;
+    font-size: 0.5rem;
+    font-weight: 500;
+}
+
+.georgette2::after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    width: 65vw;
+    height: 1px;
+    top: 10px;
+    left: 110px;
+}
+
+.georgette2 p{
+    text-align: left;
+    position: absolute;
+    top: 15px;
+    left: 110px;
+    width: 65vw;
+    font-size: 0.3rem;
+}
+
+.message{
+    display: none;
+}
+
+.back{
+    z-index: -1;
+    animation: appear 800ms;
+    opacity: 0
+}
+
+.feedback{
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+::placeholder { 
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+#name{
+    font-family: 'Quicksand', sans-serif;
+    background: transparent;
+    outline: none;
+    border: #ffffff solid 1px;
+    color: #ffffff;
+    width: 100%;
+    margin-bottom: 0;
+    font-size: 0.5rem;
+    padding: 5px 5px;
+}
+
+#email{
+    font-family: 'Quicksand', sans-serif;
+    background: transparent;
+    outline: none;
+    border: #ffffff solid 1px;
+    color: #ffffff;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 0.5rem;
+    padding: 5px 5px;   
+}
+
+#feedback{
+    resize: none;
+    font-family: 'Quicksand', sans-serif;
+    background: transparent;
+    outline: none;
+    border: #ffffff solid 1px;
+    color: #ffffff;
+    width: 100%;
+    margin-bottom: 0;
+    font-size: 0.5rem;
+    height: 20vh;
+    padding: 5px 5px;   
+}
+
+#btn{
+    font-family: 'Quicksand', sans-serif;
+    background-color: transparent;
+    color: #ffffff;
+    border: #ffffff solid 1px;
+    font-size: 0.5rem;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+#btn:hover{
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+.card{
+    text-align: center;
+    background-color: transparent;
+    border: none;
+}
+
+@media(min-width:360px){
+    .box-img::before{
+        height: 2px;
+        width: 93vw;
+        margin-top: 3%;
+        right: 10px;
+    }
+    
+    .card{
+        padding-top: 20px;
+    }
+    
+    img{
+        width: 15vw;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+    
+    .img{
+        font-family: 'Quicksand', sans-serif;
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .img h1{
+        margin-top: 0;
+        font-weight: 500;
+        font-size: 0.5rem;
+    }
+    
+    .miles{
+        position: relative;
+        left: 0;
+        top: 0;
+        transition: all 1s;
+    }
+    
+    .miles2 img{
+        width: 20vw;
+        cursor: pointer;
+    }
+    
+    .miles2{
+        position: relative;
+        left: 10px;
+        top: 30px;
+        transition: all 1s;
+    }
+    
+    .miles2 h1{
+        position: absolute;
+        top: 0;
+        left: 60px;
+        width: 160%;
+        font-size: 0.5rem;
+        font-weight: 500;
+    }
+    
+    .miles2::after{
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        width: 60vw;
+        height: 1px;
+        top: 10px;
+        left: 90px;
+    }
+    
+    .miles2 p{
+        text-align: left;
+        position: absolute;
+        top: 15px;
+        left: 90px;
+        width: 60vw;
+        font-size: 0.4rem;
+    }
+    
+    .daniel{
+        position: relative;
+        left: 0;
+        top: 0;
+        text-align: center;
+        transition: all 1s;
+    }
+    
+    .daniel2 img{
+        width: 20vw;
+    }
+    
+    .daniel2{
+        position: relative;
+        left: -100px;
+        top: 30px;
+        transition: all 1s;
+    }
+    
+    .daniel2 h1{
+        position: absolute;
+        top: 0;
+        left: 60px;
+        width: 160%;
+        font-size: 0.5rem;
+        font-weight: 500;
+    }
+    
+    .daniel2::after{
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        width: 60vw;
+        height: 1px;
+        top: 10px;
+        left: 90px;
+    }
+    
+    .daniel2 p{
+        text-align: left;
+        position: absolute;
+        top: 15px;
+        left: 90px;
+        width: 60vw;
+        font-size: 0.4rem;
+    }
+    
+    .john{
+        position: relative;
+        left: 0;
+        top: 0;
+        text-align: center;
+        transition: all 1s;
+    }
+    
+    .john2 img{
+        width: 20vw;
+    }
+    
+    .john2{
+        position: relative;
+        left: -220px;
+        top: 30px;
+        transition: all 1s;
+    }
+    
+    .john2 h1{
+        position: absolute;
+        top: 0;
+        left: 50px;
+        width: 160%;
+        font-size: 0.5rem;
+        font-weight: 500;
+    }
+    
+    .john2::after{
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        width: 60vw;
+        height: 1px;
+        top: 10px;
+        left: 90px;
+    }
+    
+    .john2 p{
+        text-align: left;
+        position: absolute;
+        top: 15px;
+        left: 90px;
+        width: 60vw;
+        font-size: 6px;
+    }
+    
+    .kayla{
+        position: relative;
+        left: 0;
+        top: 0;
+        text-align: center;
+        transition: all 1s;
+    }
+    
+    .kayla2 img{
+        width: 20vw;
+    }
+    
+    .kayla2{
+        position: relative;
+        left: -30px;
+        top: -60px;
+        transition: all 1s;
+    }
+    
+    .kayla2 h1{
+        position: absolute;
+        top: 0;
+        left: 40px;
+        width: 160%;
+        font-size: 0.5rem;
+        font-weight: 500;
+    }
+    
+    .kayla2::after{
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        width: 65vw;
+        height: 1px;
+        top: 10px;
+        left: 120px;
+    }
+    
+    .kayla2 p{
+        text-align: left;
+        position: absolute;
+        top: 15px;
+        left: 120px;
+        width: 65vw;
+        font-size: 0.3rem;
+    }
+    
+    .georgette{
+        position: relative;
+        left: 0;
+        top: 0;
+        text-align: center;
+        transition: all 1s;
+    }
+    
+    .georgette2 img{
+        width: 20vw;
+    }
+    
+    .georgette2{
+        position: relative;
+        left: -190px;
+        top: -60px;
+        transition: all 1s;
+    }
+    
+    .georgette2 h1{
+        position: absolute;
+        top: 0;
+        left: 40px;
+        width: 160%;
+        font-size: 0.5rem;
+        font-weight: 500;
+    }
+    
+    .georgette2::after{
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        width: 60vw;
+        height: 1px;
+        top: 10px;
+        left: 120px;
+    }
+    
+    .georgette2 p{
+        text-align: left;
+        position: absolute;
+        top: 15px;
+        left: 120px;
+        width: 60vw;
+        font-size: 0.3rem;
+    }
+
+}
+
+@media(min-width:375px){
+    
+    .box-img::before{
+        margin-top: 5%;
+    }
+    
+    .miles{
+        position: relative;
+        left: 0;
+        top: 0;
+        transition: all 1s;
+    }
+    
+    .miles2 img{
+        width: 20vw;
+        cursor: pointer;
+    }
+    
+    .miles2{
+        position: relative;
+        left: 10px;
+        top: 30px;
+        transition: all 1s;
+    }
+    
+    .miles2 h1{
+        position: absolute;
+        top: 0;
+        left: 60px;
+        width: 160%;
+        font-size: 0.5rem;
+        font-weight: 500;
+    }
+    
+    .miles2::after{
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        width: 60vw;
+        height: 1px;
+        top: 10px;
+        left: 90px;
+    }
+    
+    .miles2 p{
+        text-align: left;
+        position: absolute;
+        top: 15px;
+        left: 90px;
+        width: 60vw;
+        font-size: 0.4rem;
+    }
+    
+    .daniel{
+        position: relative;
+        left: 0;
+        top: 0;
+        text-align: center;
+        transition: all 1s;
+    }
+    
+    .daniel2 img{
+        width: 20vw;
+    }
+    
+    .daniel2{
+        position: relative;
+        left: -110px;
+        top: 30px;
+        transition: all 1s;
+    }
+    
+    .daniel2 h1{
+        position: absolute;
+        top: 0;
+        left: 60px;
+        width: 160%;
+        font-size: 0.5rem;
+        font-weight: 500;
+    }
+    
+    .daniel2::after{
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        width: 60vw;
+        height: 1px;
+        top: 10px;
+        left: 90px;
+    }
+    
+    .daniel2 p{
+        text-align: left;
+        position: absolute;
+        top: 15px;
+        left: 90px;
+        width: 60vw;
+        font-size: 0.4rem;
+    }
+    
+    .john{
+        position: relative;
+        left: 0;
+        top: 0;
+        text-align: center;
+        transition: all 1s;
+    }
+    
+    .john2 img{
+        width: 20vw;
+    }
+    
+    .john2{
+        position: relative;
+        left: -240px;
+        top: 30px;
+        transition: all 1s;
+    }
+    
+    .john2 h1{
+        position: absolute;
+        top: 0;
+        left: 50px;
+        width: 160%;
+        font-size: 0.5rem;
+        font-weight: 500;
+    }
+    
+    .john2::after{
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        width: 60vw;
+        height: 1px;
+        top: 10px;
+        left: 90px;
+    }
+    
+    .john2 p{
+        text-align: left;
+        position: absolute;
+        top: 15px;
+        left: 90px;
+        width: 60vw;
+        font-size: 6px;
+    }
+    
+    .kayla{
+        position: relative;
+        left: 0;
+        top: 0;
+        text-align: center;
+        transition: all 1s;
+    }
+    
+    .kayla2 img{
+        width: 20vw;
+    }
+    
+    .kayla2{
+        position: relative;
+        left: -30px;
+        top: -60px;
+        transition: all 1s;
+    }
+    
+    .kayla2 h1{
+        position: absolute;
+        top: 0;
+        left: 45px;
+        width: 160%;
+        font-size: 0.5rem;
+        font-weight: 500;
+    }
+    
+    .kayla2::after{
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        width: 65vw;
+        height: 1px;
+        top: 10px;
+        left: 120px;
+    }
+    
+    .kayla2 p{
+        text-align: left;
+        position: absolute;
+        top: 15px;
+        left: 120px;
+        width: 65vw;
+        font-size: 0.3rem;
+    }
+    
+    .georgette{
+        position: relative;
+        left: 0;
+        top: 0;
+        text-align: center;
+        transition: all 1s;
+    }
+    
+    .georgette2 img{
+        width: 20vw;
+    }
+    
+    .georgette2{
+        position: relative;
+        left: -200px;
+        top: -60px;
+        transition: all 1s;
+    }
+    
+    .georgette2 h1{
+        position: absolute;
+        top: 0;
+        left: 40px;
+        width: 160%;
+        font-size: 0.5rem;
+        font-weight: 500;
+    }
+    
+    .georgette2::after{
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        width: 60vw;
+        height: 1px;
+        top: 10px;
+        left: 120px;
+    }
+    
+    .georgette2 p{
+        text-align: left;
+        position: absolute;
+        top: 15px;
+        left: 120px;
+        width: 60vw;
+        font-size: 0.3rem;
+    }   
+}
+
+@media(min-width:425px){
+    
+    .box-img::before{
+        margin-top: 8%;
+    }
+    
+    .miles{
+        position: relative;
+        left: 0;
+        top: 0;
+        transition: all 1s;
+    }
+    
+    .miles2 img{
+        width: 20vw;
+        cursor: pointer;
+    }
+    
+    .miles2{
+        position: relative;
+        left: 10px;
+        top: 30px;
+        transition: all 1s;
+    }
+    
+    .miles2 h1{
+        position: absolute;
+        top: 0;
+        left: 60px;
+        width: 160%;
+        font-size: 0.5rem;
+        font-weight: 500;
+    }
+    
+    .miles2::after{
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        width: 60vw;
+        height: 1px;
+        top: 10px;
+        left: 110px;
+    }
+    
+    .miles2 p{
+        text-align: left;
+        position: absolute;
+        top: 15px;
+        left: 110px;
+        width: 60vw;
+        font-size: 0.5rem;
+    }
+    
+    .daniel{
+        position: relative;
+        left: 0;
+        top: 0;
+        text-align: center;
+        transition: all 1s;
+    }
+    
+    .daniel2 img{
+        width: 20vw;
+    }
+    
+    .daniel2{
+        position: relative;
+        left: -130px;
+        top: 30px;
+        transition: all 1s;
+    }
+    
+    .daniel2 h1{
+        position: absolute;
+        top: 0;
+        left: 60px;
+        width: 160%;
+        font-size: 0.5rem;
+        font-weight: 500;
+    }
+    
+    .daniel2::after{
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        width: 60vw;
+        height: 1px;
+        top: 10px;
+        left: 110px;
+    }
+    
+    .daniel2 p{
+        text-align: left;
+        position: absolute;
+        top: 15px;
+        left: 110px;
+        width: 60vw;
+        font-size: 0.5rem;
+    }
+    
+    .john{
+        position: relative;
+        left: 0;
+        top: 0;
+        text-align: center;
+        transition: all 1s;
+    }
+    
+    .john2 img{
+        width: 20vw;
+    }
+    
+    .john2{
+        position: relative;
+        left: -280px;
+        top: 30px;
+        transition: all 1s;
+    }
+    
+    .john2 h1{
+        position: absolute;
+        top: 0;
+        left: 50px;
+        width: 160%;
+        font-size: 0.5rem;
+        font-weight: 500;
+    }
+    
+    .john2::after{
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        width: 60vw;
+        height: 1px;
+        top: 10px;
+        left: 110px;
+    }
+    
+    .john2 p{
+        text-align: left;
+        position: absolute;
+        top: 15px;
+        left: 110px;
+        width: 60vw;
+        font-size: 7px;
+    }
+    
+    .kayla{
+        position: relative;
+        left: 0;
+        top: 0;
+        text-align: center;
+        transition: all 1s;
+    }
+    
+    .kayla2 img{
+        width: 20vw;
+    }
+    
+    .kayla2{
+        position: relative;
+        left: -30px;
+        top: -60px;
+        transition: all 1s;
+    }
+    
+    .kayla2 h1{
+        position: absolute;
+        top: 0;
+        left: 60px;
+        width: 160%;
+        font-size: 0.5rem;
+        font-weight: 500;
+    }
+    
+    .kayla2::after{
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        width: 65vw;
+        height: 1px;
+        top: 10px;
+        left: 140px;
+    }
+    
+    .kayla2 p{
+        text-align: left;
+        position: absolute;
+        top: 15px;
+        left: 140px;
+        width: 65vw;
+        font-size: 0.4rem;
+    }
+    
+    .georgette{
+        position: relative;
+        left: 0;
+        top: 0;
+        text-align: center;
+        transition: all 1s;
+    }
+    
+    .georgette2 img{
+        width: 20vw;
+    }
+    
+    .georgette2{
+        position: relative;
+        left: -240px;
+        top: -60px;
+        transition: all 1s;
+    }
+    
+    .georgette2 h1{
+        position: absolute;
+        top: 0;
+        left: 40px;
+        width: 160%;
+        font-size: 0.5rem;
+        font-weight: 500;
+    }
+    
+    .georgette2::after{
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        width: 60vw;
+        height: 1px;
+        top: 10px;
+        left: 140px;
+    }
+    
+    .georgette2 p{
+        text-align: left;
+        position: absolute;
+        top: 15px;
+        left: 140px;
+        width: 60vw;
+        font-size: 0.5rem;
+    }   
+}
+
+@media(min-width:600px){
+    
+    .title{
+        left: 60px;
+    }
+    
+    .title h1{
+        margin-top: 10px;
+        font-size: 2rem;
+        margin-bottom: -8px;
+    }   
+
+    .box-img::before{
+        height: 80vh;
+        width: 5px;
+        top: 10px;
+        margin-top: 0;
+        right: 260px;
+    }
+    
+    img{
+        width: 15vw;
+    }
+
+    .img{
+        top: 100px;
+    }
+
+    .img h1{
+        margin-top: 0;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    
+    .miles{
+        left: 0;
+        top: 0;
+    }
+    
+    .miles2 img{
+        width: 20vw;
+    }
+    
+    .miles2{
+        left: 20px;
+        top: 50px;
+    }
+    
+    .miles2 h1{
+        top: 10px;
+        left: 160px;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    
+    .miles2::after{
+        width: 35vw;
+        height: 2px;
+        top: 40px;
+        left: 170px;
+    }
+    
+    .miles2 p{
+        text-align: left;
+        top: 50px;
+        left: 170px;
+        width: 35vw;
+        font-size: 0.6rem;
+    }
+    
+    .daniel{
+        left: 0;
+        top: 0;
+    }
+    
+    .daniel2 img{
+        width: 20vw;
+    }
+    
+    .daniel2{
+        left: -140px;
+        top: 50px;
+    }
+    
+    .daniel2 h1{
+        top: 10px;
+        left: 160px;
+        width: 160%;
+        font-size: 1.5rem;
+    }
+    
+    .daniel2::after{
+        width: 35vw;
+        height: 2px;
+        top: 40px;
+        left: 170px;
+    }
+    
+    .daniel2 p{
+        text-align: left;
+        top: 50px;
+        left: 170px;
+        width: 35vw;
+        font-size: 0.6rem;
+    }
+    
+    .john{
+        left: 0;
+        top: 0;
+    }
+    
+    .john2 img{
+        width: 20vw;
+    }
+    
+    .john2{
+        left: -320px;
+        top: 50px;
+    }
+    
+    .john2 h1{
+        top: 10px;
+        left: 130px;
+        width: 160%;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    
+    .john2::after{
+        width: 35vw;
+        height: 2px;
+        top: 40px;
+        left: 170px;
+    }
+    
+    .john2 p{
+        position: absolute;
+        top: 50px;
+        left: 170px;
+        width: 35vw;
+        font-size: 0.6rem;
+    }
+    
+    .kayla{
+        left: 0;
+        top: 0;
+    }
+    
+    .kayla2 img{
+        width: 20vw;
+    }
+    
+    .kayla2{
+        left: 0;
+        top: -120px;
+    }
+    
+    .kayla2 h1{
+        top: 10px;
+        left: 140px;
+        width: 160%;
+        font-size: 1.3rem;
+    }
+    
+    .kayla2::after{
+        width: 35vw;
+        height: 2px;
+        top: 40px;
+        left: 200px;
+    }
+    
+    .kayla2 p{
+        text-align: left;
+        top: 50px;
+        left: 200px;
+        width: 35vw;
+        font-size: 0.6rem;
+    }
+    
+    .georgette{
+        left: 0;
+        top: 0;
+    }
+    
+    .georgette2 img{
+        width: 20vw;
+    }
+    
+    .georgette2{
+        left: -260px;
+        top: -120px;
+    }
+    
+    .georgette2 h1{
+        top: 10px;
+        left: 130px;
+        width: 160%;
+        font-size: 1.3rem;
+    }
+    
+    .georgette2::after{
+        width: 35vw;
+        height: 2px;
+        top: 40px;
+        left: 200px;
+    }
+    
+    .georgette2 p{
+        text-align: left;
+        top: 50px;
+        left: 200px;
+        width: 35vw;
+        font-size: 0.6rem;
+    }
+    
+    .back{
+        z-index: -1;
+        animation: appear 800ms;
+        opacity: 0
+    }
+    
+    .feedback{
+        left: 0;
+        top: 10px;
+    }
+    
+    #name{
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        padding: 10px 5px;
+    }
+    
+    #email{
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        padding: 10px 5px;   
+    }
+    
+    #feedback{
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        height: 53vh;
+        padding: 10px 5px;   
+    }
+    
+    #btn{
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (min-width:992px){
+    body{
+        background-size: unset;
+    }
+
+    .title{
+        left: 100px;
+    }
+    
+    .title h1{
+        margin-top: 0;
+        font-size: 4rem;
+        margin-bottom: -15px;
+    }   
+    
+    .navbar-brand{
+        margin-top: 0;
+    }
+
+    .navbar-nav{
+        background-color: transparent;
+    }
+
+    .box-img::before{
+        height: 70vh;
+        width: 5px;
+        top: 10px;
+        right: 340px;
+    }
+    
+    img{
+        width: 15vw;
+    }
+    
+    .img{
+        top: 0;
+    }
+    
+    .img h1{
+        margin-top: 0;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    
+    .miles{
+        left: 0;
+        top: 0;
+    }
+    
+    .miles2 img{
+        width: 20vw;
+    }
+    
+    .miles2{
+        left: 20px;
+        top: 100px;
+    }
+    
+    .miles2 h1{
+        top: 10px;
+        left: 180px;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    
+    .miles2::after{
+        width: 35vw;
+        height: 2px;
+        top: 40px;
+        left: 240px;
+    }
+    
+    .miles2 p{
+        text-align: left;
+        top: 50px;
+        left: 240px;
+        width: 35vw;
+        font-size: 0.8rem;
+    }
+    
+    .daniel{
+        left: 0;
+        top: 0;
+    }
+    
+    .daniel2 img{
+        width: 20vw;
+    }
+    
+    .daniel2{
+        left: -200px;
+        top: 100px;
+    }
+    
+    .daniel2 h1{
+        top: 10px;
+        left: 200px;
+        width: 160%;
+        font-size: 1.5rem;
+    }
+    
+    .daniel2::after{
+        width: 35vw;
+        height: 2px;
+        top: 40px;
+        left: 240px;
+    }
+    
+    .daniel2 p{
+        text-align: left;
+        top: 50px;
+        left: 240px;
+        width: 35vw;
+        font-size: 0.8rem;
+    }
+    
+    .john{
+        left: 0;
+        top: 0;
+    }
+    
+    .john2 img{
+        width: 20vw;
+    }
+    
+    .john2{
+        left: -420px;
+        top: 100px;
+    }
+    
+    .john2 h1{
+        top: 10px;
+        left: 160px;
+        width: 160%;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    
+    .john2::after{
+        width: 35vw;
+        height: 2px;
+        top: 40px;
+        left: 240px;
+    }
+    
+    .john2 p{
+        position: absolute;
+        top: 50px;
+        left: 240px;
+        width: 35vw;
+        font-size: 0.6rem;
+    }
+    
+    .kayla{
+        left: 0;
+        top: 0;
+    }
+    
+    .kayla2 img{
+        width: 20vw;
+    }
+    
+    .kayla2{
+        left: -20px;
+        top: -100px;
+    }
+    
+    .kayla2 h1{
+        top: 10px;
+        left: 180px;
+        width: 160%;
+        font-size: 1.5rem;
+    }
+    
+    .kayla2::after{
+        width: 35vw;
+        height: 2px;
+        top: 40px;
+        left: 280px;
+    }
+    
+    .kayla2 p{
+        text-align: left;
+        top: 50px;
+        left: 280px;
+        width: 35vw;
+        font-size: 0.6rem;
+    }
+    
+    .georgette{
+        left: 0;
+        top: 0;
+    }
+    
+    .georgette2 img{
+        width: 20vw;
+    }
+    
+    .georgette2{
+        left: -350px;
+        top: -100px;
+    }
+    
+    .georgette2 h1{
+        top: 10px;
+        left: 160px;
+        width: 160%;
+        font-size: 1.5rem;
+    }
+    
+    .georgette2::after{
+        width: 35vw;
+        height: 2px;
+        top: 40px;
+        left: 280px;
+    }
+    
+    .georgette2 p{
+        text-align: left;
+        top: 50px;
+        left: 280px;
+        width: 35vw;
+        font-size: 0.8rem;
+    }
+    
+    .back{
+        z-index: -1;
+        animation: appear 800ms;
+        opacity: 0
+    }
+    
+    .feedback{
+        left: 0;
+        top: 10px;
+    }
+    
+    #name{
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        padding: 10px 5px;
+    }
+    
+    #email{
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        padding: 10px 5px;   
+    }
+    
+    #feedback{
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        height: 43.5vh;
+        padding: 10px 5px;   
+    }
+    
+    #btn{
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (min-width:1440px){
+    body{
+        background-size: 100% 100%;
+        background-position: center center;
+    }
+
+    .box-img::before{
+        height: 73vh;
+        width: 5px;
+        top: 10px;
+        right: 440px;
+    }
+    
+    img{
+        width: 15vw;
+    }
+    
+    .img h1{
+        margin-top: 0;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    
+    .miles{
+        left: 0;
+        top: 0;
+    }
+    
+    .miles2 img{
+        width: 20vw;
+    }
+    
+    .miles2{
+        left: 120px;
+        top: 100px;
+    }
+    
+    .miles2 h1{
+        top: 50px;
+        left: 250px;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    
+    .miles2::after{
+        width: 35vw;
+        height: 2px;
+        top: 90px;
+        left: 350px;
+    }
+    
+    .miles2 p{
+        text-align: left;
+        top: 100px;
+        left: 352px;
+        width: 35vw;
+        font-size: 1rem;
+    }
+    
+    .daniel{
+        left: 0;
+        top: 0;
+    }
+    
+    .daniel2 img{
+        width: 20vw;
+    }
+    
+    .daniel2{
+        left: -220px;
+        top: 100px;
+    }
+    
+    .daniel2 h1{
+        top: 50px;
+        left: 250px;
+        width: 160%;
+        font-size: 2rem;
+    }
+    
+    .daniel2::after{
+        width: 35vw;
+        height: 2px;
+        top: 90px;
+        left: 350px;
+    }
+    
+    .daniel2 p{
+        text-align: left;
+        top: 100px;
+        left: 352px;
+        width: 35vw;
+        font-size: 1rem;
+    }
+    
+    .john{
+        left: 0;
+        top: 0;
+    }
+    
+    .john2 img{
+        width: 20vw;
+    }
+    
+    .john2{
+        left: -620px;
+        top: 100px;
+    }
+    
+    .john2 h1{
+        top: 0;
+        left: 220px;
+        width: 160%;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    
+    .john2::after{
+        width: 35vw;
+        height: 2px;
+        top: 40px;
+        left: 350px;
+    }
+    
+    .john2 p{
+        position: absolute;
+        top: 50px;
+        left: 350px;
+        width: 35vw;
+        font-size: 1rem;
+    }
+    
+    .kayla{
+        left: 0;
+        top: 0;
+    }
+    
+    .kayla2 img{
+        width: 20vw;
+    }
+    
+    .kayla2{
+        left: 0;
+        top: -200px;
+    }
+    
+    .kayla2 h1{
+        top: 50px;
+        left: 240px;
+        width: 160%;
+        font-size: 2rem;
+    }
+    
+    .kayla2::after{
+        width: 35vw;
+        height: 2px;
+        top: 90px;
+        left: 420px;
+    }
+    
+    .kayla2 p{
+        text-align: left;
+        top: 100px;
+        left: 420px;
+        width: 35vw;
+        font-size: 1rem;
+    }
+    
+    .georgette{
+        left: 0;
+        top: 0;
+    }
+    
+    .georgette2 img{
+        width: 20vw;
+    }
+    
+    .georgette2{
+        left: -500px;
+        top: -200px;
+    }
+    
+    .georgette2 h1{
+        top: 50px;
+        left: 220px;
+        width: 160%;
+        font-size: 2rem;
+    }
+    
+    .georgette2::after{
+        width: 35vw;
+        height: 2px;
+        top: 90px;
+        left: 420px;
+    }
+    
+    .georgette2 p{
+        text-align: left;
+        top: 100px;
+        left: 420px;
+        width: 35vw;
+        font-size: 1rem;
+    }
+    
+    .back{
+        z-index: -1;
+        animation: appear 800ms;
+        opacity: 0
+    }
+    
+    .feedback{
+        left: 85px;
+        top: 10px;
+    }
+    
+    #name{
+        width: 80%;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        padding: 10px 5px;
+    }
+    
+    #email{
+        width: 80%;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        padding: 10px 5px;   
+    }
+    
+    #feedback{
+        width: 80%;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        height: 50vh;
+        padding: 10px 5px;   
+    }
+    
+    #btn{
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (min-width:2560px){
+    body{
+        font-size: 3rem;
+        margin-top: 43px;
+        margin-right: 20px;
+    }
+
+    .navbar-brand{
+        margin-top: 43px;
+        margin-left: 40px;
+        font-size: 3rem!important;
+    }
+
+    .home::before{
+        content: "";
+        position: absolute;
+        width: 0;
+        top: 39px;
+        height: 0;
+        opacity: 0;
+        background: white;
+    }
+
+    .home:hover::before{
+        content: "";
+        position: absolute;
+        width: 130px;
+        top: 40px;
+        height: 5px;
+        opacity: 100%;
+        background: white;
+    }
+    
+    .philosophers::before{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 39px;
+        opacity: 0;
+        background: white;
+    }
+    
+    
+    .philosophers:hover::before{
+        content: "";
+        position: absolute;
+        width: 280px;
+        height: 5px;
+        top: 40px;
+        opacity: 100%;
+        background: white;
+    }
+    
+    .gallery::before{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        background: white;
+        top: 39px;
+        opacity: 0;
+        transition: all 1s;
+    }
+    
+    .gallery:hover::before{
+        content: "";
+        position: absolute;
+        width: 160px;
+        height: 5px;
+        top: 40px;
+        opacity: 100%;
+        background: white;
+    }
+    
+    .quiz::before{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 39px;
+        opacity: 0;
+        background: white;
+        transition: all 1s;
+    }
+    
+    .quiz:hover::before{
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 5px;
+        top: 40px;
+        opacity: 100%;
+        background: white;
+    }
+    
+    .about-us::before{
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 5px;
+        top: 40px;
+        opacity: 100%;
+        background: white;
+    }
+
+    .box-img::before{
+        top: 20px;
+        right: 880px;
+    }
+
+    .title h1{
+        margin-top: 100px;
+        font-size: 10rem;
+        margin-bottom: -40px;
+    }
+
+    .img{
+        top: 150px;
+    }
+    
+    .card{
+        padding-top: 50px;
+    }
+
+    .img h1{
+        margin-top: 0;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    
+    .miles{
+        left: 0;
+        top: 0;
+    }
+    
+    .miles2 img{
+        width: 20vw;
+    }
+    
+    .miles2{
+        left: 120px;
+        top: 100px;
+    }
+    
+    .miles2 h1{
+        top: 50px;
+        left: 380px;
+        font-size: 4rem;
+        font-weight: 500;
+    }
+    
+    .miles2::after{
+        width: 35vw;
+        height: 5px;
+        top: 130px;
+        left: 550px;
+    }
+    
+    .miles2 p{
+        text-align: left;
+        top: 140px;
+        left: 550px;
+        width: 35vw;
+        font-size: 2rem;
+    }
+    
+    .daniel{
+        left: 0;
+        top: 0;
+    }
+    
+    .daniel2 img{
+        width: 20vw;
+    }
+    
+    .daniel2{
+        left: -420px;
+        top: 100px;
+    }
+    
+    .daniel2 h1{
+        top: 50px;
+        left: 400px;
+        width: 160%;
+        font-size: 4rem;
+    }
+    
+    .daniel2::after{
+        width: 35vw;
+        height: 5px;
+        top: 130px;
+        left: 550px;
+    }
+    
+    .daniel2 p{
+        text-align: left;
+        top: 140px;
+        left: 550px;
+        width: 35vw;
+        font-size: 2rem;
+    }
+    
+    .john{
+        left: 0;
+        top: 0;
+    }
+    
+    .john2 img{
+        width: 20vw;
+    }
+    
+    .john2{
+        left: -1020px;
+        top: 100px;
+    }
+    
+    .john2 h1{
+        top: 0;
+        left: 340px;
+        width: 160%;
+        font-size: 4rem;
+        font-weight: 500;
+    }
+    
+    .john2::after{
+        width: 35vw;
+        height: 5px;
+        top: 80px;
+        left: 550px;
+    }
+    
+    .john2 p{
+        position: absolute;
+        top: 90px;
+        left: 550px;
+        width: 35vw;
+        font-size: 1.8rem;
+    }
+    
+    .kayla{
+        left: 0;
+        top: 0;
+    }
+    
+    .kayla2 img{
+        width: 20vw;
+    }
+    
+    .kayla2{
+        left: 0;
+        top: -350px;
+    }
+    
+    .kayla2 h1{
+        top: 50px;
+        left: 440px;
+        width: 160%;
+        font-size: 4rem;
+    }
+    
+    .kayla2::after{
+        width: 35vw;
+        height: 5px;
+        top: 130px;
+        left: 700px;
+    }
+    
+    .kayla2 p{
+        text-align: left;
+        top: 140px;
+        left: 700px;
+        width: 35vw;
+        font-size: 1.8rem;
+    }
+    
+    .georgette{
+        left: 0;
+        top: 0;
+    }
+    
+    .georgette2 img{
+        width: 20vw;
+    }
+    
+    .georgette2{
+        left: -850px;
+        top: -350px;
+    }
+    
+    .georgette2 h1{
+        top: 50px;
+        left: 440px;
+        width: 160%;
+        font-size: 4rem;
+    }
+    
+    .georgette2::after{
+        width: 35vw;
+        height: 5px;
+        top: 130px;
+        left: 700px;
+    }
+    
+    .georgette2 p{
+        text-align: left;
+        top: 140px;
+        left: 700px;
+        width: 35vw;
+        font-size: 2rem;
+    }
+    
+    .back{
+        z-index: -1;
+        animation: appear 800ms;
+        opacity: 0
+    }
+    
+    .feedback{
+        left: 0;
+        top: 10px;
+    }
+    
+    #name{
+        width: 100%;
+        border: #ffffff 3px solid;
+        margin-bottom: 20px;
+        font-size: 2rem;
+        padding: 10px 5px;
+    }
+    
+    #email{
+        width: 100%;
+        border: #ffffff 3px solid;
+        margin-bottom: 20px;
+        font-size: 2rem;
+        padding: 10px 5px;   
+    }
+    
+    #feedback{
+        width: 100%;
+        border: #ffffff 3px solid;
+        margin-bottom: 5px;
+        font-size: 2rem;
+        height: 55vh;
+        padding: 10px 5px;   
+    }
+    
+    #btn{
+        font-size: 2rem;
+        padding: 10px 20px;
+        border: #ffffff 3px solid;
+    }
+}

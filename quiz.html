@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="icon" href="img/Logo.jpg" type="images">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Philosophicalness</a>
+        <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white home" href="home-page.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white philosophers" href="philosophers.html">Philosophers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white gallery" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white quiz" href="#">Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white about-us" href="about-us.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container-fluid title">
+        <h1>Quiz</h1>
+    </div>
+    <div class="container-fluid quiz-box">
+        <div class="row">
+            <div class="bullet col-12 col-sm-4">
+                <a onclick="question1()" id="screen1" class="question1">Question 1</a>
+                <a onclick="question2()" id="screen2" class="bullet2">Question 2</a>
+                <a onclick="question3()" id="screen3" class="bullet3">Question 3</a>
+                <a onclick="question4()" id="screen4" class="bullet4">Question 4</a>
+                <a onclick="question5()" id="screen5" class="bullet5">Question 5</a>
+                <a onclick="question6()" id="screen6" class="bullet6">Question 6</a>
+                <a onclick="question7()" id="screen7" class="bullet7">Question 7</a>
+                <a onclick="question8()" id="screen8" class="bullet8">Question 8</a>
+                <a id="screenend" class="end">End of Quiz</a>
+            </div>
+            <div class="question-container col-sm-8 col-12">
+                <h1>Question</h1>
+                <a onclick="a_answer()" class="choice1">answer</a>
+                <a onclick="b_answer()" class="choice2">answer</a>
+                <a onclick="c_answer()" class="choice3">answer</a>
+                <a onclick="d_answer()"class="choice4">answer</a>
+            </div>
+            <div class="question2-container col-sm-8 col-12 remove">
+                <h1>Question</h1>
+                <a onclick="a_answer2()" class="choice1">answer</a>
+                <a onclick="b_answer2()" class="choice2">answer</a>
+                <a onclick="c_answer2()" class="choice3">answer</a>
+                <a onclick="d_answer2()"class="choice4">answer</a>
+            </div>
+            <div class="question3-container col-sm-8 col-12 remove">
+                <h1>Question</h1>
+                <a onclick="a_answer3()" class="choice1">answer</a>
+                <a onclick="b_answer3()" class="choice2">answer</a>
+                <a onclick="c_answer3()" class="choice3">answer</a>
+                <a onclick="d_answer3()"class="choice4">answer</a>
+            </div>
+            <div class="question4-container col-sm-8 col-12 remove">
+                <h1>Question</h1>
+                <a onclick="a_answer4()" class="choice1">answer</a>
+                <a onclick="b_answer4()" class="choice2">answer</a>
+                <a onclick="c_answer4()" class="choice3">answer</a>
+                <a onclick="d_answer4()"class="choice4">answer</a>
+            </div>
+            <div class="question5-container col-sm-8 col-12 remove">
+                <label>Question</label>
+                <input autocomplete="off" type="text" id="answer5" name="answer">
+            </div>
+            <div class="question6-container col-sm-8 col-12 remove">
+                <label>Question</label>
+                <input autocomplete="off" type="text" id="answer6" name="answer">
+            </div>
+            <div class="question7-container col-sm-8 col-12 remove">
+                <input autocomplete="off" type="text" id="answer7" name="answer">
+                <label>Question</label>
+            </div>
+            <div class="question8-container col-sm-8 col-12 remove">
+                <label class="upper">Question</label>
+                <input autocomplete="off" type="text" id="answer8" name="answer">
+                <label class="lower">Question</label>
+                <a onclick="end()" class="submit">SUBMIT</a>
+            </div>
+            <div class="end-of-quiz col-sm-8 col-12 remove">
+              <div class="h1">
+                <h1>Your score is </h1>
+                <h1>number</h1>
+                <h1>out of</h1>
+                <h1>8</h1>
+              </div>
+                <a onclick="location.reload()">RETRY</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script text="javascript" src="js/quiz.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

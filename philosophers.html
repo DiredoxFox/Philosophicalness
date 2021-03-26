@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Philosophers</title>
+    <link rel="stylesheet" href="css/philosophers.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5bd6adf128.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/Logo.jpg" type="images">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Philosophicalness</a>
+        <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white home" href="home-page.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white philosophers" href="#">Philosophers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white gallery" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white quiz" href="quiz.html">Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white about-us" href="about-us.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container-fluid title">
+        <h1>Philosophers</h1>
+    </div>
+    <div class="container-fluid container1">
+        <div class="row">
+            <div class="col-lg-4 col-md-3 col-12">
+                <div class="container-fluid">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-light dropdown-toggle btn-drop" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Philosophers
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" onclick="socrates()">Socrates</a>
+                          <a class="dropdown-item" onclick="aristotle()">Aristotle</a>
+                          <a class="dropdown-item" onclick="plato()">Plato</a>
+                          <a class="dropdown-item" onclick="parmenides()">Parmenides</a>
+                          <a class="dropdown-item" onclick="epictus()">Epictetus</a>
+                          <a class="dropdown-item" onclick="seneca()">Seneca</a>
+                          <a class="dropdown-item" onclick="confucius()">Confucius</a>
+                          <a class="dropdown-item" onclick="aquinas()">Thomas Aquinas</a>
+                          <a class="dropdown-item" onclick="descartes()">Rene Descartes</a>
+                          <a class="dropdown-item" onclick="foucault()">Michel Foucault</a>
+                        </div>
+                      </div>
+                    <div id="names" class="names">
+                        <p id="socrates" class="socrates" onclick="socrates()">Socrates</p>
+                        <p class="" onclick="aristotle()">Aristotle</p>
+                        <p class="" onclick="plato()">Plato</p>
+                        <p class="" onclick="parmenides()">Parmenides</p>
+                        <p class="" onclick="epictus()">Epictetus</p>
+                        <p class="" onclick="seneca()">Seneca</p>
+                        <p class="" onclick="confucius()">Confucius</p>
+                        <p class="" onclick="aquinas()">Thomas Aquinas</p>
+                        <p class="" onclick="descartes()">Rene Descartes</p>
+                        <p class="" onclick="foucault()">Michel Foucault</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-9 col-12">
+                <div class="container-fluid name">
+                    <h1>Name</h1>
+                </div>
+                <div class="container-fluid line">
+                    <hr>
+                </div>
+                <div class="container-fluid">
+                    <div class="information">
+                        <p>Information</p>
+                        <h2>big-idea</h2>
+                        <ul>
+                            <li>idea</li>
+                            <li>idea</li>
+                            <li>idea</li>
+                        </ul>
+                        <h2>key-works</h2>
+                        <ul>
+                            <li class="first-work">works</li>
+                            <li class="second-work">works</li>
+                            <li class="third-work">works</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script text="javascript" src="js/philosophers.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
